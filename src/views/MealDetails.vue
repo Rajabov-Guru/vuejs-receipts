@@ -16,17 +16,17 @@
     <div class="my-3">
       {{meal.strInstructions}}
     </div>
-    <div class="my-8 grid grid-cols-1 md:grid-cols-2">
-      <div>
+    <div class="my-8 grid grid-cols-2">
+      <div class="mx-auto">
         <h2 class="text-2xl font-semibold mb-3">Ingredients</h2>
         <ul>
           <li v-for="(ing, ind) of meal.ingredients">{{ind+1}}. {{ing}}</li>
         </ul>
       </div>
-      <div>
+      <div class="mx-auto">
         <h2 class="text-2xl font-semibold mb-3">Measures</h2>
         <ul>
-          <li v-for="(measure, ind) of meal.measures">{{ind}}. {{measure}}</li>
+          <li v-for="(measure, ind) of meal.measures">{{ind+1}}. {{measure}}</li>
         </ul>
       </div>
     </div>
