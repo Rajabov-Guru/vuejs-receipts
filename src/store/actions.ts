@@ -1,6 +1,7 @@
 import {Action} from "vuex";
 import axiosClient from "../main/axiosClient";
 import {getIngredients, getMeasures} from "../main/lib";
+import {Meal} from "../main/model";
 
 export const searchMeals:Action<any, any> = async ({commit}, keyWord:string) => {
     const {data} = await axiosClient.get(`search.php?s=${keyWord}`);

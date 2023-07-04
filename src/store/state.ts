@@ -1,3 +1,5 @@
+import {Meal} from "../main/model";
+
 interface StateType{
     searchedMeals: Meal[];
     mealsByLetter: Meal[];
